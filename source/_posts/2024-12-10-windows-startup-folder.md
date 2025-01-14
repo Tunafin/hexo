@@ -1,10 +1,11 @@
 ---
 title: Windows 啟動資料夾(Startup Folder)
 date: 2024-12-10 21:22:25
-updated:
+updated: 2025-01-14
 categories:
 tags:
   - Windows
+cover: https://i.imgur.com/0zYpbCM.png
 ---
 
 <div style="width: 100%; max-width: 500px; margin: 10px 0;">

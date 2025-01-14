@@ -1,0 +1,14 @@
+/* #region 調整遮罩的背景色 */
+:root {
+  --mark-bg: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] {
+  --mark-bg: rgba(0, 0, 0, 0.7);
+}
+/* #endregion */
+
+#page-header #post-info {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+}

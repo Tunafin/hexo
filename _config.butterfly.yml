@@ -52,10 +52,10 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /assets/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /assets/avatar.jpg
   effect: false
 
 # Disable all banner images
@@ -100,7 +100,7 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    # - xxx.jpg
+    - "linear-gradient(135deg, #FFDEE9 10%, #B5FFFC 100%)"
 
 # Replace Broken Images
 error_img:
@@ -172,7 +172,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 3
+index_layout: 1
 
 # Display the article introduction on homepage
 # 1: description
@@ -198,7 +198,7 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
@@ -280,14 +280,14 @@ aside:
   card_author:
     enable: true
     description:
-    button:
-      enable: true
+    button: 
+      enable: false
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: Hello!
+      link: https://github.com/Tunafin
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: This blog is currently in demo.
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -361,7 +361,7 @@ translate:
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 2
+  defaultEncoding: 1
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
@@ -498,7 +498,7 @@ search:
 share:
   # Choose: sharejs / addtoany
   # Leave it empty if you don't need share
-  use: sharejs
+  use:
 
   # Share.js
   # https://github.com/overtrue/share.js
@@ -1027,7 +1027,7 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/assets/self.css">
   bottom:
     # - <script src="xxxx"></script>
 

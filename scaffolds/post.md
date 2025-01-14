@@ -4,4 +4,5 @@ date: {{ date }}
 updated:
 categories:
 tags:
+cover:
 ---

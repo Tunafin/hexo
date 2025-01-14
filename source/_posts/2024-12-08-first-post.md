@@ -1,9 +1,10 @@
 ---
 title: First post
 date: 2024-12-08 00:18:50
-updated:
+updated: 2025-01-14
 categories:
 tags:
+cover: https://i.imgur.com/X5h2Efb.jpeg
 ---
 
 <div style="width: 100%; max-width: 500px; margin: 10px 0;">
