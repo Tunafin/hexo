@@ -1,10 +1,16 @@
 # README
 
-網址: https://tunafin.net/  
-這是一個使用 Hexo 建立的個人網站。  
-Hexo 是一個快速、簡單且高效的靜態網站生成器，詳細請見 [Hexo官網](https://hexo.io/)。
+Website: https://tunafin.net/  
+This is a personal website project built using Hexo.  
+Hexo is a fast, simple, and efficient static site generator.  
+For more details, please visit the [Hexo official website](https://hexo.io/).  
 
-## 關於部屬
+## About the Theme
 
-本專案參考「[在 GitHub Pages 上部署 Hexo](https://hexo.io/zh-tw/docs/github-pages)」的方式，  
-使用 `Github Actions` 來操作，並自動化完成部屬。  
+This website uses the [Butterfly](https://github.com/jerryc127/hexo-theme-butterfly) theme, a feature-rich and highly customizable Hexo theme.
+
+## About Deployment
+
+This project follows the method described in "[在 GitHub Pages 上部署 Hexo](https://hexo.io/zh-tw/docs/github-pages)",  
+using `GitHub Actions` for automation to complete the deployment process.  
+
