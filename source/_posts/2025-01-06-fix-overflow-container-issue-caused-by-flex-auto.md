@@ -3,7 +3,9 @@ title: "flex-auto 造成 overflow 可滾動元素跑版的解決方法"
 date: 2025-01-06 23:29:11
 updated:
 categories:
-tags: HTML CSS
+tags: 
+  - HTML
+  - CSS
 ---
 
 <div style="width: 100%; max-width: 600px; margin: 10px 0;">
