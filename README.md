@@ -13,4 +13,3 @@ This website uses the [Butterfly](https://github.com/jerryc127/hexo-theme-butter
 
 This project follows the method described in "[在 GitHub Pages 上部署 Hexo](https://hexo.io/zh-tw/docs/github-pages)",  
 using `GitHub Actions` for automation to complete the deployment process.  
-
