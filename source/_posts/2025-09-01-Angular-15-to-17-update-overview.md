@@ -1,7 +1,7 @@
 ---
 title: Angular, v15 到 v17 的新功能重點整理
 date: 2025-09-01 20:19:00
-updated: 2025-09-03
+updated: 2025-09-07
 categories:
 tags:
   - Angular
@@ -10,7 +10,7 @@ cover: https://i.imgur.com/AC09hUs.png
 
 記得幾年前我接觸 Angular 時，當時的版本還是 v15 。如今 Angular 已經進入 v20 版本了！這些版本中有許多新功能，讓我們來快速回顧一下重點更新，當然若須深入了解，官方文件有各功能更詳細的介紹可參考。
 
-由於內容稍多，所以將分為上下篇；此篇為上篇，介紹 v15 到 v17 的主要新功能。
+由於內容稍多，所以將分為上下篇；此篇為上篇，介紹 v15 到 v17 的主要新功能。 ( v18 到 v20 請見[下一篇](/2025-09-05/Angular-18-to-20-update-overview/))
 
 ---
 
@@ -85,7 +85,7 @@ cover: https://i.imgur.com/AC09hUs.png
 - 官方詳細介紹: https://angular.dev/guide/signals
 
   ```typescript
-  import { signal, computed, effect, asReadonly } from '@angular/core';
+  import { signal, computed, effect } from '@angular/core';
 
   interface User { name: string; age: number; }
 
@@ -103,7 +103,7 @@ cover: https://i.imgur.com/AC09hUs.png
       this.user.update(u => ({ ...u, age: u.age + 1 }));
     }
 
-    // 透過 asReadonly 從來源取得唯獨的 signal
+    // 透過 asReadonly 從來源取得唯讀的 signal
     readonlyUser: Signal<User> = this.user.asReadonly();
 
     // 來源signal變動時(且computed的signal被template使用)，會呼叫callback
@@ -118,15 +118,20 @@ cover: https://i.imgur.com/AC09hUs.png
 
 ### Input() 支援 required 關鍵字
 
-可以直接在 @Input() 加上 `required` 來強制要求父元件一定要傳入這個 input 屬性。這樣如果父元件沒有提供這個 input，開發時就會出現錯誤。
+可以直接在裝飾器 @Input() 加上 `required` 來強制要求父元件一定要傳入這個 input 屬性。這樣如果父元件沒有提供這個 input，開發時就會出現錯誤。
+
+(基於裝飾器的 @InputAPI 仍可使用，不過官方在之後的版本，建議在新專案中使用基於 signal 的 input。)
 
 ```typescript
-@Input({ required: true }) name: string = '';
+@Input({ required: true }) name1: string = '';
+
+// Signal-based input, returns an `InputSignal<string>`.
+name2 = input.required<string>();
 ```
 
 ### SSR 和 Hydration
 
-v16 新出現的 Hydration（補水）功能是指在伺服器端渲染（server-side rendering, SSR）後，將靜態的 HTML 內容在瀏覽器端「補水」，讓它恢復成可互動的 Angular 應用程式。
+v16 新出現的 Hydration（水合）功能是指在伺服器端渲染（server-side rendering, SSR）後，將靜態的 HTML 內容在瀏覽器端「補水」，讓它恢復成可互動的 Angular 應用程式。
 
 簡單來說：
 
