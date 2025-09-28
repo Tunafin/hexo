@@ -256,7 +256,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
+    since: 2024
   custom_text:
   # Copyright of theme and framework
   copyright: true
@@ -287,7 +287,7 @@ aside:
       link: https://github.com/Tunafin
   card_announcement:
     enable: true
-    content: This blog is currently in demo.
+    content: いらっしゃいませ！ (>ω<)つค้้้้้้้้้้้้้้้้
   card_recent_post:
     enable: true
     # If set 0 will show all
