@@ -1,9 +1,11 @@
 name: Pages
 
 on:
-  push:
-    branches:
-      - main # default branch
+  # 改為手動觸發
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main # default branch
 
 jobs:
   build:
